@@ -1,0 +1,53 @@
+.services {
+  text-align: center;
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.services h2 {
+  font-size: 32px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card {
+  position: relative;
+  background: linear-gradient(45deg, #f5f5f5, #e0e0e0); /* Adjusted the gradient color */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 2rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Combined transitions */
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective: 1000px; /* Adjust the perspective for depth */
+}
+
+.service-card:hover {
+  transform: translateY(-10px) rotateX(10deg) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Improved box-shadow */
+}
+
+.service-card img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.08);
+}
+
+.service-card h3 {
+  color: #333; /* Adjusted text color */
+  font-size: 28px; /* Increased font size */
+}
+
+.service-card:hover h3 {
+  box-shadow: 0 2px 5px rgba(13, 110, 253, 0.3); /* Improved box-shadow with a subtle color */
+  border-radius: 2rem;
+}

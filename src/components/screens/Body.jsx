@@ -1,7 +1,10 @@
 import React from 'react';
 // import Navbar from './Navbar'; // Assuming you have a Navbar component
 import Navbar from '../global/Navbar'
+import Part1 from './part1/Part1';
+
 import Contact from './contact/Contact';
+
 import Services from './services/Services';
 import Footer from '../global/Footer'
 import './Body.css'
@@ -9,9 +12,6 @@ const Body = () => {
 
   return (
     <div>
-
-  
-       
         {/* <div>
             Examples
         </div>
@@ -25,10 +25,11 @@ const Body = () => {
       {/* <Navbar /> */}
 
       <section className="hero">
-        <div className="hero-content">
+        {/* <div className="hero-content">
           <h1>Welcome to NorthCloud</h1>
           <p>Your Hi-Tech Solution Provider</p>
-        </div>
+        </div> */}
+        <Part1></Part1>
 
       </section>
       <Services/>

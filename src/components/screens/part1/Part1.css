@@ -1,0 +1,38 @@
+
+.hero-content{
+    display: flex;
+    margin-top: 5rem;
+    /* align-self: flex-start;
+    transition: transform 1s; 
+  
+    &:hover {
+      transform: perspective(1000px) rotateY(-10deg); 
+    } */
+
+    align-self: flex-start;
+    transition: transform 1s; /* Specify the property for transition */
+    transform-origin: center;
+/*   
+    &.animate {
+      transform: perspective(500px) rotateY(-10deg);
+
+    } */
+
+
+}
+    
+.hero-content .left ,.hero-content .right{
+    width: 50%;
+}
+.hero-content h1 {
+    font-size: 36px;
+}
+.hero-content h2{
+    font-size: 30px;
+
+}
+.hero-img{
+    border-radius: 2rem;
+    box-shadow: 1px 0 10px rgb(83, 83, 83);
+    max-width: 800px;
+}
